@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090B0F">
+  <meta name="description" content="Find your direction in tech with Waypoint. Explore IT careers, discover your strengths, and build your learning roadmap.">
+  <title>Waypoint — Find Your Direction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    Your tech journey starts here. Find the path that fits you.
+    <a href="#assessment">Discover your path <span>↗</span></a>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Waypoint home">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span>waypoint<span class="brand-period">.</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="mainNav">
+        <a href="#paths" data-en="Career paths" data-ar="المجالات">Career paths</a>
+        <a href="#assessment" data-en="Find your path" data-ar="اكتشف مجالك">Find your path</a>
+        <a href="#how-it-works" data-en="How it works" data-ar="إزاي بنساعدك">How it works</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">عربي</button>
+        <a class="button button-small button-primary nav-cta" href="#assessment" data-en="Get started" data-ar="ابدأ دلوقتي">Get started <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span><span data-en="YOUR FUTURE IN TECH STARTS HERE" data-ar="مستقبلك في التكنولوجيا بيبدأ هنا">YOUR FUTURE IN TECH STARTS HERE</span></div>
+        <h1 data-en="Lost in tech?<br>Let's find your <span>direction.</span>" data-ar="تايه في مجالات التكنولوجيا؟<br>يلا نحدد <span>طريقك.</span>">Lost in tech?<br>Let's find your <span>direction.</span></h1>
+        <p class="hero-description" data-en="There are so many paths in tech. Discover the one that matches your interests, explore what you'll need to learn, and take your next step with confidence." data-ar="مجالات التكنولوجيا كتير، ومش لازم تعرف كل حاجة من البداية. اكتشف المجال المناسب لاهتماماتك، واعرف تتعلم إيه، وابدأ خطوتك الجاية بثقة.">There are so many paths in tech. Discover the one that matches your interests, explore what you'll need to learn, and take your next step with confidence.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#assessment" data-en="Find my path" data-ar="اكتشف مجالي">Find my path <span>↗</span></a>
+          <a class="text-link" href="#paths" data-en="Explore all paths" data-ar="شوف كل المجالات">Explore all paths <span>↓</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-icon"><span>✳</span></div>
+          <div><strong data-en="Built for your next step" data-ar="مصمم لخطوتك الجاية">Built for your next step</strong><span data-en="For students, graduates & career switchers" data-ar="للطلبة والخريجين واللي عايزين يغيروا مجالهم">For students, graduates & career switchers</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-glow"></div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+        <div class="compass">
+          <div class="compass-inner">
+            <div class="compass-center"><span>W</span></div>
+            <span class="compass-north">N</span>
+            <span class="compass-east">E</span>
+            <span class="compass-south">S</span>
+            <span class="compass-west">W</span>
+            <div class="compass-needle"></div>
+          </div>
+        </div>
+        <div class="floating-card floating-card-top">
+          <span class="floating-icon lime-icon">✳</span>
+          <div><strong data-en="Your interests" data-ar="اهتماماتك">Your interests</strong><span data-en="Find what fits you" data-ar="اعرف إيه المناسب ليك">Find what fits you</span></div>
+        </div>
+        <div class="floating-card floating-card-bottom">
+          <span class="floating-icon violet-icon">↗</span>
+          <div><strong data-en="Your next step" data-ar="خطوتك الجاية">Your next step</strong><span data-en="One step at a time" data-ar="خطوة بخطوة">One step at a time</span></div>
+        </div>
+        <div class="visual-coordinate coordinate-one">30°02' N</div>
+        <div class="visual-coordinate coordinate-two">YOUR JOURNEY / 001</div>
+      </div>
+      <div class="hero-bottom-note"><span></span><span data-en="NO PRESSURE. JUST PROGRESS." data-ar="من غير ضغط، خطوة بخطوة.">NO PRESSURE. JUST PROGRESS.</span></div>
+    </section>
+
+    <section class="stats-strip">
+      <div class="container stats-grid">
+        <div class="stat-item"><span class="stat-number">01</span><span data-en="Discover your interests" data-ar="اكتشف اهتماماتك">Discover your interests</span></div>
+        <div class="stat-item"><span class="stat-number">02</span><span data-en="Explore tech careers" data-ar="استكشف مجالات التكنولوجيا">Explore tech careers</span></div>
+        <div class="stat-item"><span class="stat-number">03</span><span data-en="Build your roadmap" data-ar="خطط لطريق تعلمك">Build your roadmap</span></div>
+      </div>
+    </section>
+
+    <section class="section paths-section container" id="paths">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-en="EXPLORE YOUR OPTIONS" data-ar="استكشف اختياراتك">EXPLORE YOUR OPTIONS</span></div>
+          <h2 data-en="Different paths.<br><span>One starts with you.</span>" data-ar="مجالات مختلفة.<br><span>واحد منها ممكن يكون طريقك.</span>">Different paths.<br><span>One starts with you.</span></h2>
+        </div>
+        <p data-en="You don't have to know everything today. Start exploring, compare your options, and see what sparks your curiosity." data-ar="مش مطلوب منك تعرف كل حاجة دلوقتي. ابدأ استكشاف، قارن بين المجالات، وشوف إيه اللي يحمسك.">You don't have to know everything today. Start exploring, compare your options, and see what sparks your curiosity.</p>
+      </div>
+
+      <div class="path-toolbar">
+        <div class="filter-list" role="group" aria-label="Filter career paths">
+          <button class="filter-chip active" data-filter="all" data-en="All paths" data-ar="كل المجالات">All paths</button>
+          <button class="filter-chip" data-filter="development" data-en="Development" data-ar="البرمجة">Development</button>
+          <button class="filter-chip" data-filter="data" data-en="Data & AI" data-ar="البيانات والذكاء الاصطناعي">Data & AI</button>
+          <button class="filter-chip" data-filter="security" data-en="Security" data-ar="الأمن السيبراني">Security</button>
+          <button class="filter-chip" data-filter="design" data-en="Design" data-ar="التصميم">Design</button>
+        </div>
+        <span class="results-count" id="resultsCount">06 PATHS</span>
+      </div>
+
+      <div class="paths-grid" id="pathsGrid">
+        <article class="path-card" data-category="development" data-path="frontend">
+          <div class="path-card-top"><span class="path-icon icon-lime">⌘</span><span class="path-number">PATH / 01</span></div>
+          <div class="path-tags"><span>DEVELOPMENT</span><span>VISUAL</span></div>
+          <h3>Frontend Development</h3>
+          <p data-en="Turn designs into interactive websites and experiences that people love to use." data-ar="حوّل التصميمات لمواقع تفاعلية وتجارب ممتعة للمستخدمين.">Turn designs into interactive websites and experiences that people love to use.</p>
+          <div class="path-skills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <button class="path-link" data-open-path="frontend" data-en="Explore this path" data-ar="اكتشف المجال">Explore this path <span>↗</span></button>
+        </article>
+
+        <article class="path-card" data-category="development" data-path="backend">
+          <div class="path-card-top"><span class="path-icon icon-violet">{ }</span><span class="path-number">PATH / 02</span></div>
+          <div class="path-tags"><span>DEVELOPMENT</span><span>LOGIC</span></div>
+          <h3>Backend Development</h3>
+          <p data-en="Build the logic, APIs, and systems that make applications work behind the scenes." data-ar="ابني المنطق والـ APIs والأنظمة اللي بتشغّل التطبيقات من ورا الكواليس.">Build the logic, APIs, and systems that make applications work behind the scenes.</p>
+          <div class="path-skills"><span>Programming</span><span>APIs</span><span>Databases</span></div>
+          <button class="path-link" data-open-path="backend" data-en="Explore this path" data-ar="اكتشف المجال">Explore this path <span>↗</span></button>
+        </article>
+
+        <article class="path-card" data-category="data" data-path="data">
+          <div class="path-card-top"><span class="path-icon icon-blue">▥</span><span class="path-number">PATH / 03</span></div>
+          <div class="path-tags"><span>DATA & AI</span><span>ANALYTICAL</span></div>
+          <h3>Data Analysis</h3>
+          <p data-en="Turn raw data into useful insights that help people and businesses make better decisions." data-ar="حوّل البيانات لأفكار واضحة تساعد الأفراد والشركات ياخدوا قرارات أحسن.">Turn raw data into useful insights that help people and businesses make better decisions.</p>
+          <div class="path-skills"><span>Excel</span><span>SQL</span><span>Power BI</span></div>
+          <button class="path-link" data-open-path="data" data-en="Explore this path" data-ar="اكتشف المجال">Explore this path <span>↗</span></button>
+        </article>
+
+        <article class="path-card" data-category="security" data-path="cybersecurity">
+          <div class="path-card-top"><span class="path-icon icon-pink">⌑</span><span class="path-number">PATH / 04</span></div>
+          <div class="path-tags"><span>SECURITY</span><span>INVESTIGATIVE</span></div>
+          <h3>Cybersecurity</h3>
+          <p data-en="Understand digital threats and learn how to protect systems, networks, and information." data-ar="افهم التهديدات الرقمية واتعلم إزاي تحمي الأنظمة والشبكات والمعلومات.">Understand digital threats and learn how to protect systems, networks, and information.</p>
+          <div class="path-skills"><span>Networking</span><span>Linux</span><span>Security</span></div>
+          <button class="path-link" data-open-path="cybersecurity" data-en="Explore this path" data-ar="اكتشف المجال">Explore this path <span>↗</span></button>
+        </article>
+
+        <article class="path-card" data-category="design" data-path="uiux">
+          <div class="path-card-top"><span class="path-icon icon-orange">✳</span><span class="path-number">PATH / 05</span></div>
+          <div class="path-tags"><span>DESIGN</span><span>CREATIVE</span></div>
+          <h3>UI/UX Design</h3>
+          <p data-en="Design digital products that look great, feel intuitive, and solve real user problems." data-ar="صمّم منتجات رقمية شكلها حلو وسهلة الاستخدام وبتحل مشاكل حقيقية.">Design digital products that look great, feel intuitive, and solve real user problems.</p>
+          <div class="path-skills"><span>Research</span><span>Figma</span><span>Prototyping</span></div>
+          <button class="path-link" data-open-path="uiux" data-en="Explore this path" data-ar="اكتشف المجال">Explore this path <span>↗</span></button>
+        </article>
+
+        <article class="path-card" data-category="development" data-path="mobile">
+          <div class="path-card-top"><span class="path-icon icon-teal">▣</span><span class="path-number">PATH / 06</span></div>
+          <div class="path-tags"><span>DEVELOPMENT</span><span>PRODUCT</span></div>
+          <h3>Mobile Development</h3>
+          <p data-en="Create mobile apps that help people get things done, right from their phones." data-ar="طوّر تطبيقات موبايل بتساعد الناس تنجز احتياجاتها من خلال موبايلها.">Create mobile apps that help people get things done, right from their phones.</p>
+          <div class="path-skills"><span>Dart</span><span>Flutter</span><span>APIs</span></div>
+          <button class="path-link" data-open-path="mobile" data-en="Explore this path" data-ar="اكتشف المجال">Explore this path <span>↗</span></button>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden data-en="No paths in this category yet. Try another filter." data-ar="مفيش مجالات في التصنيف ده حاليًا. جرّب تصنيف تاني.">No paths in this category yet. Try another filter.</p>
+    </section>
+
+    <section class="assessment-section" id="assessment">
+      <div class="container assessment-layout">
+        <div class="assessment-intro">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-en="LET'S MAKE IT PERSONAL" data-ar="خلينا نحدد المناسب ليك">LET'S MAKE IT PERSONAL</span></div>
+          <h2 data-en="Your path shouldn't be a <span>guess.</span>" data-ar="اختيار مجالك مش لازم يكون <span>بالتخمين.</span>">Your path shouldn't be a <span>guess.</span></h2>
+          <p data-en="Answer five quick questions about what you enjoy. We'll suggest a direction to explore first, with a starter roadmap to help you move forward." data-ar="جاوب على 5 أسئلة بسيطة عن الحاجات اللي بتحبها. هنقترح عليك مجال تبدأ تستكشفه، ومعاه خريطة تعلم تساعدك تتحرك لقدام.">Answer five quick questions about what you enjoy. We'll suggest a direction to explore first, with a starter roadmap to help you move forward.</p>
+          <div class="assessment-note"><span>✳</span><span data-en="No experience needed. Just be yourself." data-ar="مش محتاج خبرة. جاوب بطبيعتك.">No experience needed. Just be yourself.</span></div>
+          <div class="assessment-decoration"><span>01</span><span>—</span><span>05</span></div>
+        </div>
+
+        <div class="quiz-panel" id="quizPanel">
+          <div class="quiz-topline"><span id="questionCounter">QUESTION 01 / 05</span><span id="progressPercent">20%</span></div>
+          <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+          <form id="careerQuiz">
+            <div class="quiz-question active" data-question="0">
+              <h3 data-en="What kind of work sounds most exciting?" data-ar="إيه نوع الشغل اللي تحس إنه ممتع ليك؟">What kind of work sounds most exciting?</h3>
+              <p data-en="Choose the one that feels most like you." data-ar="اختار أكتر حاجة شبهك.">Choose the one that feels most like you.</p>
+              <label class="quiz-option"><input type="radio" name="q0" value="frontend"><span class="option-symbol">✳</span><span data-en="Creating websites and things people can see" data-ar="أعمل مواقع وحاجات الناس تشوفها وتستخدمها">Creating websites and things people can see</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q0" value="backend"><span class="option-symbol">{ }</span><span data-en="Solving logic problems and building systems" data-ar="أحل مشاكل منطقية وأبني أنظمة">Solving logic problems and building systems</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q0" value="data"><span class="option-symbol">▥</span><span data-en="Finding patterns and making sense of information" data-ar="أكتشف أنماط وأفهم البيانات والمعلومات">Finding patterns and making sense of information</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q0" value="cybersecurity"><span class="option-symbol">⌑</span><span data-en="Investigating risks and protecting things" data-ar="أكتشف المخاطر وأحمي الأنظمة والمعلومات">Investigating risks and protecting things</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q0" value="uiux"><span class="option-symbol">✎</span><span data-en="Designing clear, useful, beautiful experiences" data-ar="أصمم تجارب سهلة ومفيدة وشكلها حلو">Designing clear, useful, beautiful experiences</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q0" value="mobile"><span class="option-symbol">▣</span><span data-en="Building apps for phones and tablets" data-ar="أعمل تطبيقات للموبايل والتابلت">Building apps for phones and tablets</span><span class="option-check"></span></label>
+            </div>
+
+            <div class="quiz-question" data-question="1">
+              <h3 data-en="Which strength sounds most like you?" data-ar="أنهي نقطة قوة أقرب لشخصيتك؟">Which strength sounds most like you?</h3>
+              <p data-en="There are no wrong answers." data-ar="مفيش إجابة صح أو غلط.">There are no wrong answers.</p>
+              <label class="quiz-option"><input type="radio" name="q1" value="frontend"><span class="option-symbol">◉</span><span data-en="I notice visual details and enjoy experimenting" data-ar="باخد بالي من التفاصيل البصرية وبحب أجرب">I notice visual details and enjoy experimenting</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q1" value="backend"><span class="option-symbol">⌘</span><span data-en="I break complicated problems into steps" data-ar="بعرف أقسم المشاكل المعقدة لخطوات">I break complicated problems into steps</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q1" value="data"><span class="option-symbol">▥</span><span data-en="I compare information and spot patterns" data-ar="بعرف أقارن المعلومات وألاحظ الأنماط">I compare information and spot patterns</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q1" value="cybersecurity"><span class="option-symbol">⌑</span><span data-en="I question things and look for weaknesses" data-ar="بشكك وبحب أكتشف الثغرات والمشاكل">I question things and look for weaknesses</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q1" value="uiux"><span class="option-symbol">✎</span><span data-en="I understand what people need and simplify things" data-ar="بفهم احتياجات الناس وبحب أبسّط الأمور">I understand what people need and simplify things</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q1" value="mobile"><span class="option-symbol">▣</span><span data-en="I enjoy making useful things from scratch" data-ar="بحب أعمل حاجات مفيدة من الصفر">I enjoy making useful things from scratch</span><span class="option-check"></span></label>
+            </div>
+
+            <div class="quiz-question" data-question="2">
+              <h3 data-en="What would you rather spend time learning?" data-ar="تحب تقضي وقتك في تعلم إيه؟">What would you rather spend time learning?</h3>
+              <p data-en="Pick what you'd be curious to explore." data-ar="اختار الحاجة اللي عندك فضول تعرف عنها أكتر.">Pick what you'd be curious to explore.</p>
+              <label class="quiz-option"><input type="radio" name="q2" value="frontend"><span class="option-symbol">⌘</span><span data-en="Web technologies and interactive interfaces" data-ar="تقنيات الويب والواجهات التفاعلية">Web technologies and interactive interfaces</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q2" value="backend"><span class="option-symbol">{ }</span><span data-en="Programming, APIs, and system design" data-ar="البرمجة والـ APIs وتصميم الأنظمة">Programming, APIs, and system design</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q2" value="data"><span class="option-symbol">▥</span><span data-en="Spreadsheets, statistics, and data tools" data-ar="الجداول والإحصاء وأدوات تحليل البيانات">Spreadsheets, statistics, and data tools</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q2" value="cybersecurity"><span class="option-symbol">⌑</span><span data-en="Networks, digital defense, and investigations" data-ar="الشبكات والحماية الرقمية والتحقيقات">Networks, digital defense, and investigations</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q2" value="uiux"><span class="option-symbol">✎</span><span data-en="Design systems, user research, and prototypes" data-ar="أنظمة التصميم وأبحاث المستخدم والنماذج">Design systems, user research, and prototypes</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q2" value="mobile"><span class="option-symbol">▣</span><span data-en="App development and mobile experiences" data-ar="تطوير التطبيقات وتجارب الموبايل">App development and mobile experiences</span><span class="option-check"></span></label>
+            </div>
+
+            <div class="quiz-question" data-question="3">
+              <h3 data-en="What kind of challenge motivates you?" data-ar="أنهي نوع من التحديات بيحمسك؟">What kind of challenge motivates you?</h3>
+              <p data-en="Think about the process, not just the result." data-ar="فكر في طريقة الشغل نفسها، مش النتيجة بس.">Think about the process, not just the result.</p>
+              <label class="quiz-option"><input type="radio" name="q3" value="frontend"><span class="option-symbol">✳</span><span data-en="Making a visual idea work in a browser" data-ar="أحوّل فكرة بصرية لحاجة شغالة على المتصفح">Making a visual idea work in a browser</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q3" value="backend"><span class="option-symbol">{ }</span><span data-en="Making complex systems work reliably" data-ar="أخلي الأنظمة المعقدة تشتغل بشكل سليم">Making complex systems work reliably</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q3" value="data"><span class="option-symbol">▥</span><span data-en="Finding the answer hidden in a dataset" data-ar="أوصل لإجابة مخفية جوه مجموعة بيانات">Finding the answer hidden in a dataset</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q3" value="cybersecurity"><span class="option-symbol">⌑</span><span data-en="Finding and fixing security weaknesses ethically" data-ar="أكتشف وأعالج نقاط الضعف الأمنية بشكل أخلاقي">Finding and fixing security weaknesses ethically</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q3" value="uiux"><span class="option-symbol">✎</span><span data-en="Making a confusing experience simple" data-ar="أحوّل تجربة معقدة لتجربة سهلة">Making a confusing experience simple</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q3" value="mobile"><span class="option-symbol">▣</span><span data-en="Building a useful feature for a mobile app" data-ar="أبني ميزة مفيدة جوه تطبيق موبايل">Building a useful feature for a mobile app</span><span class="option-check"></span></label>
+            </div>
+
+            <div class="quiz-question" data-question="4">
+              <h3 data-en="What would make you proud of your work?" data-ar="إيه اللي يخليك فخور بشغلك؟">What would make you proud of your work?</h3>
+              <p data-en="Choose the outcome you'd enjoy most." data-ar="اختار النتيجة اللي هتفرح بيها أكتر.">Choose the outcome you'd enjoy most.</p>
+              <label class="quiz-option"><input type="radio" name="q4" value="frontend"><span class="option-symbol">⌘</span><span data-en="A website people enjoy using" data-ar="موقع الناس تستمتع باستخدامه">A website people enjoy using</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q4" value="backend"><span class="option-symbol">{ }</span><span data-en="A reliable system that runs smoothly" data-ar="نظام موثوق وشغال بكفاءة">A reliable system that runs smoothly</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q4" value="data"><span class="option-symbol">▥</span><span data-en="A clear insight that improves a decision" data-ar="معلومة واضحة تساعد في قرار أفضل">A clear insight that improves a decision</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q4" value="cybersecurity"><span class="option-symbol">⌑</span><span data-en="A system that is safer because of my work" data-ar="نظام بقى أكثر أمانًا بسبب شغلي">A system that is safer because of my work</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q4" value="uiux"><span class="option-symbol">✎</span><span data-en="A product that feels easy and natural to use" data-ar="منتج استخدامه سهل وطبيعي">A product that feels easy and natural to use</span><span class="option-check"></span></label>
+              <label class="quiz-option"><input type="radio" name="q4" value="mobile"><span class="option-symbol">▣</span><span data-en="An app that solves a real everyday problem" data-ar="تطبيق بيحل مشكلة حقيقية في الحياة اليومية">An app that solves a real everyday problem</span><span class="option-check"></span></label>
+            </div>
+
+            <div class="quiz-error" id="quizError" role="alert" hidden data-en="Choose an answer to continue." data-ar="اختار إجابة عشان تقدر تكمل.">Choose an answer to continue.</div>
+            <div class="quiz-controls">
+              <button class="button button-quiet" type="button" id="quizBack" disabled><span>←</span> <span data-en="Back" data-ar="رجوع">Back</span></button>
+              <button class="button button-primary" type="button" id="quizNext"><span data-en="Next question" data-ar="السؤال التالي">Next question</span> <span>→</span></button>
+              <button class="button button-primary" type="submit" id="quizSubmit" hidden><span data-en="Find my direction" data-ar="اكتشف مجالي">Find my direction</span> <span>↗</span></button>
+            </div>
+          </form>
+        </div>
+
+        <div class="quiz-result" id="quizResult" hidden aria-live="polite">
+          <div class="result-symbol" id="resultSymbol">✳</div>
+          <span class="result-eyebrow" data-en="YOUR STARTING POINT" data-ar="دي نقطة البداية">YOUR STARTING POINT</span>
+          <h3 id="resultTitle">Frontend Development</h3>
+          <p id="resultDescription"></p>
+          <div class="result-roadmap">
+            <span data-en="YOUR FIRST STEPS" data-ar="أول خطواتك">YOUR FIRST STEPS</span>
+            <ol id="resultSteps"></ol>
+          </div>
+          <p class="result-disclaimer" data-en="This is a starting suggestion based on your answers, not a fixed career decision. Explore the other paths too." data-ar="ده اقتراح مبدئي بناءً على إجاباتك، مش قرار نهائي لمستقبلك. استكشف باقي المجالات كمان.">This is a starting suggestion based on your answers, not a fixed career decision. Explore the other paths too.</p>
+          <div class="result-actions">
+            <button class="button button-primary" id="resultExplore" type="button">Explore this path ↗</button>
+            <button class="button button-quiet" id="quizRestart" type="button" data-en="Retake quiz" data-ar="أعد الاختبار">Retake quiz</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how-section container" id="how-it-works">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-en="A LITTLE CLARITY GOES A LONG WAY" data-ar="خطوات بسيطة تفرق كتير">A LITTLE CLARITY GOES A LONG WAY</span></div>
+          <h2 data-en="You don't need it all<br><span>figured out.</span>" data-ar="مش لازم تكون عارف<br><span>كل حاجة من البداية.</span>">You don't need it all<br><span>figured out.</span></h2>
+        </div>
+        <p data-en="The first step is understanding your options. The next is choosing one small thing you can do today." data-ar="أول خطوة إنك تفهم اختياراتك. وبعدها تختار حاجة صغيرة تقدر تبدأ بيها النهارده.">The first step is understanding your options. The next is choosing one small thing you can do today.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card"><span class="step-index">01 / EXPLORE</span><div class="step-visual step-visual-one"><span>?</span><span>✳</span><span>⌘</span></div><h3 data-en="Get to know yourself" data-ar="افهم ميولك">Get to know yourself</h3><p data-en="Think about what interests you, how you like to solve problems, and what you want to create." data-ar="فكر في اهتماماتك، وطريقة حلّك للمشاكل، والحاجات اللي نفسك تعملها.">Think about what interests you, how you like to solve problems, and what you want to create.</p></article>
+        <article class="step-card"><span class="step-index">02 / DISCOVER</span><div class="step-visual step-visual-two"><span>01</span><span>02</span><span>03</span></div><h3 data-en="Compare your options" data-ar="قارن بين المجالات">Compare your options</h3><p data-en="Explore different roles and see what each one involves before committing to a direction." data-ar="اكتشف طبيعة كل مجال قبل ما تقرر تركز وقتك ومجهودك في اتجاه معين.">Explore different roles and see what each one involves before committing to a direction.</p></article>
+        <article class="step-card"><span class="step-index">03 / GET MOVING</span><div class="step-visual step-visual-three"><span>↗</span><span>✓</span><span>→</span></div><h3 data-en="Take your first step" data-ar="ابدأ أول خطوة">Take your first step</h3><p data-en="Use a starter roadmap to learn the basics, practice, and build projects at your own pace." data-ar="استخدم خريطة تعلم مبدئية، اتعلم الأساسيات، وطبّق بمشاريع على راحتك.">Use a starter roadmap to learn the basics, practice, and build projects at your own pace.</p></article>
+      </div>
+    </section>
+
+    <section class="closing-section container">
+      <div class="closing-card">
+        <div class="closing-orbit closing-orbit-one"></div>
+        <div class="closing-orbit closing-orbit-two"></div>
+        <div class="closing-content">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-en="YOUR NEXT CHAPTER" data-ar="خطوتك الجديدة">YOUR NEXT CHAPTER</span></div>
+          <h2 data-en="You don't need the whole map.<br><span>Just a starting point.</span>" data-ar="مش لازم تكون شايف الطريق كله.<br><span>محتاج تبدأ بس.</span>">You don't need the whole map.<br><span>Just a starting point.</span></h2>
+          <p data-en="Your future isn't a race. Take your time, stay curious, and find the direction that feels right for you." data-ar="مستقبلك مش سباق. خد وقتك، وفضل تستكشف، واختار الاتجاه اللي يناسبك.">Your future isn't a race. Take your time, stay curious, and find the direction that feels right for you.</p>
+          <a class="button button-primary" href="#assessment" data-en="Find my direction" data-ar="اكتشف طريقي">Find my direction <span>↗</span></a>
+        </div>
+        <div class="closing-mark"><span class="brand-mark"><span></span><span></span><span></span></span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand-column">
+          <a class="brand footer-brand" href="#home">
+            <span class="brand-mark"><span></span><span></span><span></span></span>
+            <span>waypoint<span class="brand-period">.</span></span>
+          </a>
+          <p data-en="A clearer direction for your future in tech." data-ar="طريق أوضح لمستقبلك في التكنولوجيا.">A clearer direction for your future in tech.</p>
+          <span class="footer-location"><span class="announcement-dot"></span><span data-en="Made for your next chapter" data-ar="لخطوتك الجاية">Made for your next chapter</span></span>
+        </div>
+        <div class="footer-links-column">
+          <h4 data-en="EXPLORE" data-ar="استكشف">EXPLORE</h4>
+          <a href="#paths" data-en="Career paths" data-ar="المجالات">Career paths</a>
+          <a href="#assessment" data-en="Career quiz" data-ar="اختبار المجال">Career quiz</a>
+          <a href="#how-it-works" data-en="How it works" data-ar="إزاي بنساعدك">How it works</a>
+        </div>
+        <div class="footer-links-column">
+          <h4 data-en="INFORMATION" data-ar="معلومات">INFORMATION</h4>
+          <a href="#our-story" data-policy="story">Our Story</a>
+          <a href="#policies" data-policy="policies">Policies</a>
+          <a href="#contact" data-policy="contact">Contact Us</a>
+        </div>
+        <div class="footer-links-column">
+          <h4 data-en="MORE" data-ar="المزيد">MORE</h4>
+          <a href="#allergens" data-policy="allergens">Allergens</a>
+          <a href="#locations" data-policy="locations">Our Locations</a>
+          <a href="#team" data-policy="team">Join the Team</a>
+        </div>
+      </div>
+      <div class="footer-social-row">
+        <span data-en="STAY CONNECTED" data-ar="تابعنا">STAY CONNECTED</span>
+        <div class="social-links">
+          <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">facebook ↗</a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">twitter ↗</a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">instagram ↗</a>
+          <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer">tiktok ↗</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>©2026 DD IP Holder LLC.</span>
+        <a href="#home" class="back-to-top" data-en="BACK TO TOP ↑" data-ar="الرجوع للأعلى ↑">BACK TO TOP ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="info-dialog" id="fieldDialog">
+    <div class="dialog-top"><span class="dialog-label" id="fieldCategory">CAREER PATH</span><button type="button" class="dialog-close" data-close-dialog aria-label="Close">×</button></div>
+    <div class="dialog-symbol" id="fieldSymbol">✳</div>
+    <h2 id="fieldTitle">Career path</h2>
+    <p id="fieldDescription"></p>
+    <div class="dialog-section"><h3 data-en="What you'll learn" data-ar="هتتعلم إيه">What you'll learn</h3><ul id="fieldSkills"></ul></div>
+    <div class="dialog-section"><h3 data-en="Your starter roadmap" data-ar="خريطة البداية">Your starter roadmap</h3><ol id="fieldRoadmap"></ol></div>
+    <div class="dialog-section"><h3 data-en="Try a first project" data-ar="جرّب أول مشروع">Try a first project</h3><p id="fieldProject"></p></div>
+    <button type="button" class="button button-primary dialog-done" data-close-dialog data-en="Got it" data-ar="تمام">Got it</button>
+  </dialog>
+
+  <dialog class="info-dialog" id="policyDialog">
+    <div class="dialog-top"><span class="dialog-label">WAYPOINT</span><button type="button" class="dialog-close" data-close-dialog aria-label="Close">×</button></div>
+    <h2 id="policyTitle">Information</h2>
+    <div id="policyBody"></div>
+    <button type="button" class="button button-primary dialog-done" data-close-dialog data-en="Close" data-ar="إغلاق">Close</button>
+  </dialog>
+</body>
+</html>
