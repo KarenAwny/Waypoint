@@ -109,7 +109,7 @@ export default function Assessment({ onExploreRecommended }) {
           <div className="assessment-decoration">
             <span>01</span>
             <span>—</span>
-            <span>05</span>
+            <span>{String(totalQuestions).padStart(2, '0')}</span>
           </div>
         </div>
 
@@ -195,6 +195,15 @@ export default function Assessment({ onExploreRecommended }) {
             </div>
             <span className="result-eyebrow">{t.quizFinished}</span>
             <h3 id="resultTitle">{recommendedTitle}</h3>
+
+            <div className="personality-badge">
+              <span>{isArabic ? recommendedPath.personalityTypeAr : recommendedPath.personalityTypeEn}</span>
+            </div>
+
+            <p className="personality-summary">
+              {isArabic ? recommendedPath.personalitySummaryAr : recommendedPath.personalitySummaryEn}
+            </p>
+
             <p id="resultDescription">{recommendedDesc}</p>
 
             <div className="result-roadmap">
